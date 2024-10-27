@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filtrar Serviços - Empresas de Infraestrutura</title>
+    <link rel="stylesheet" href="css/styleEmpresas.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="logo">
+            <img src="th.jpeg" alt="Logo da Empresa">
+        </div>
+
+        <h1>Serviços de Empresas de Infraestrutura</h1>
+
+        <div class="barraDeFiltro">
+            <input type="text" placeholder="Pesquisar serviços..." id="barraDePesquisa">
+
+            <select id="filtroCategoria">
+                <option value="">Todas as Categorias</option>
+                <option value="exemplo um">Exemplo Um</option>
+                <option value="exemplo dois">Exemplo Dois</option>
+                <option value="exemplo tres">Exemplo Tres</option>
+                <option value="exemplo quatro">Exemplo Quatro</option>
+                <option value="exemplo cinco">Exemplo Cinco</option>
+                <option value="exemplo seis">Exemplo Seis</option>
+            </select>
+        </div>
+
+        <div id="listaDeServicos" class="lista-de-servicos">
+            <div class="cartaoDeServico">
+                <h2>Exemplo Um</h2>
+                <p>Empresa: Raphael</p>
+                <p>Categoria: Exemplo Um</p>
+                <button class="botaoDetalhes" onclick="abrirModal('Exemplo um', 'Raphael', 'Exemplo um', 'Detalhes: Exemplo um')">Ver Detalhes</button>
+            </div>
+
+            <div class="cartaoDeServico">
+                <h2>Exemplo Dois</h2>
+                <p>Empresa: Vinícius</p>
+                <p>Categoria: Exemplo Dois</p>
+                <button class="botaoDetalhes" onclick="abrirModal('Exemplo dois', 'Vinícius', 'Exemplo dois', 'Detalhes: Exemplo dois.')">Ver Detalhes</button>
+            </div>
+            
+            <div class="cartaoDeServico">
+                <h2>Exemplo Três</h2>
+                <p>Empresa: Jéssica</p>
+                <p>Categoria: Exemplo Tres</p>
+                <button class="botaoDetalhes" onclick="abrirModal('Exemplo Três', 'Jéssica', 'Exemplo Três', 'Detalhes: Exemplo Três.')">Ver Detalhes</button>
+            </div>
+
+            <div class="cartaoDeServico">
+                <h2>Exemplo Quatro</h2>
+                <p>Empresa: Kelly</p>
+                <p>Categoria: Exemplo Quatro</p>
+                <button class="botaoDetalhes" onclick="abrirModal('Exemplo Quatro', 'Kelly', 'Exemplo Quatro', 'Detalhes :Exemplo Quatro.')">Ver Detalhes</button>
+            </div>
+
+            <div class="cartaoDeServico">
+                <h2>Exemplo Cinco</h2>
+                <p>Empresa: Fulano</p>
+                <p>Categoria: Exemplo Cinco</p>
+                <button class="botaoDetalhes" onclick="abrirModal('Exemplo Cinco', 'Fulano', 'Exemplo Cinco', 'Detalhes: Exemplo Cinco.')">Ver Detalhes</button>
+            </div>
+            
+            <div class="cartaoDeServico">
+                <h2>Exemplo Seis</h2>
+                <p>Empresa: Ciclano</p>
+                <p>Categoria: Exemplo Seis</p>
+                <button class="botaoDetalhes" onclick="abrirModal('Exemplo Seis', '', 'Exemplo Seis', 'Detalhes: Exemplo Seis.')">Ver Detalhes</button>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="modalDetalhes" class="modal" style="display: none;">
+        <div class="conteudoModal">
+            <span class="botaoFechar" onclick="fecharModal()">&times;</span>
+            <h2 id="tituloModal"></h2>
+            <p><strong>Empresa:</strong> <span id="empresaModal"></span></p>
+            <p><strong>Categoria:</strong> <span id="categoriaModal"></span></p>
+            <p id="detalhesModal"></p>
+            <a href="formUsuario.html" class="botaoCadastro">Cadastrar</a>
+        </div>
+    </div>
+
+    <script src="app/view/js/script.js"></script>
+</body>
+</html>
