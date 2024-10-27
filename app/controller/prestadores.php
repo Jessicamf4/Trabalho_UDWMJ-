@@ -1,6 +1,6 @@
 // api/empresas.php
 <?php
-require_once 'app/config/db.php';
+require_once 'config/db.php';
 
 $url = $_SERVER['REQUEST_URI'];
 $method = $_SERVER['REQUEST_METHOD'];
