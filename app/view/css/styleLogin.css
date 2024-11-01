@@ -20,7 +20,7 @@ body {
 }
 
 .page {
-  background-image: url("img/imagem-capa.jpg");
+  background-image: url("imagem-capa.jpg");
   display: flex;
   flex-direction: column;
   height: calc(100% - 40px);
