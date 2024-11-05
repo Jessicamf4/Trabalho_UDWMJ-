@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/formServico.js"></script>
     <title>Formulário</title>
 </head>
 
@@ -29,13 +30,13 @@
 
                     <div class="input-box">
                         <label for="firstname">Nome</label>
-                        <input id="nome" type="text" name="firstname" placeholder="Digite seu primeiro nome"
+                        <input id="nome" type="text" name="nome" placeholder="Digite seu primeiro nome"
                             required>
                     </div>
 
                     <div class="input-box">
                         <label for="lastname">CPF</label>
-                        <input id="cpf" type="text" name="lastname" placeholder="Digite seu sobrenome" required>
+                        <input id="cpf" type="text" name="cpf" placeholder="Digite seu sobrenome" required>
                     </div>
 
                     <div class="input-box">
@@ -45,17 +46,17 @@
 
                     <div class="input-box">
                         <label for="number">Celular</label>
-                        <input id="celular" type="tel" name="number" placeholder="(xx) xxxx-xxxx" required>
+                        <input id="celular" type="tel" name="celular" placeholder="(xx) xxxx-xxxx" required>
                     </div>
 
                     <div class="input-box">
                         <label for="password">Senha</label>
-                        <input id="senha" type="password" name="password" placeholder="Digite sua senha" required>
+                        <input id="senha" type="password" name="senha" placeholder="Digite sua senha" required>
                     </div>
 
                     <div class="input-box">
                         <label for="cep">CEP</label>
-                        <input id="cep" type="" name="confirmPassword"
+                        <input id="cep" type="" name="cep"
                             placeholder="Digite sua senha novamente" required>
                     </div>
 
@@ -65,31 +66,31 @@
                     <label for="options">Selecione uma categoria</label>
                     <select id="categoria" name="options" required>
                         <option value="">Escolha uma opção</option>
-                        <option value="opcao1">Opção 1</option>
-                        <option value="opcao2">Opção 2</option>
-                        <option value="opcao3">Opção 3</option>
-                        <option value="opcao4">Opção 4</option>
-                        <option value="opcao5">Opção 5</option>
+                        <option value="1">Opção 1</option>
+                        <option value="2">Opção 2</option>
+                        <option value="3">Opção 3</option>
+                        <option value="4">Opção 4</option>
+                        <option value="5">Opção 5</option>
                     </select>
                 </div>
 
                 <div class="form-group">
                     <label for="description">Descrição</label>
-                    <textarea id="descricao" name="description" required></textarea>
+                    <textarea id="descricao" name="descricao" required></textarea>
                 </div>
 
                 <div class="form-group">
                     <label for="description">informacoes Complementares</label>
-                    <textarea id="informacoesComplementares" name="description" required></textarea>
+                    <textarea id="informacoesComplementares" name="informacoesComplementares" required></textarea>
                 </div>
 
                 <div class="form-group">
                     <label for="attachment">Anexo</label>
-                    <input type="file" id="attachment" name="attachment">
+                    <input type="file" id="Anexo" name="Anexo">
                 </div>
 
                 <div class="continue-button">
-                    <button><a href="#">Continuar</a> </button>
+                    <button onclick="salvarServico()"><a href="#">Continuar</a> </button>
                 </div>
             </form>
         </div>
