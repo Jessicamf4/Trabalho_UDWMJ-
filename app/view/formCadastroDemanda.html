@@ -29,7 +29,7 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ms-auto">
-                        <li class="nav-item"><a class="nav-link" href="indexEmpresas.html">Demandas de Serviço</a></li>
+                        <li class="nav-item"><a class="nav-link" href="indexEmpresas.html">Prestadores disponíveis</a></li>
                         <li class="nav-item"><a class="nav-link" href="/index.html">Home</a></li>
                     </ul>
                 </div>
@@ -40,7 +40,7 @@
             <form action="#">
                 <div class="form-header">
                     <div class="title">
-                        <h1>Cadastre-se</h1>
+                        <h1>Cadastre sua demanda de serviço</h1>
                     </div>
                     <!-- <div class="login-button">
                         <button><a href="#">Entrar</a></button>
@@ -55,7 +55,7 @@
                     </div>
 
                     <div class="input-box">
-                        <label for="lastname">CPF</label>
+                        <label for="lastname">CNPJ ou CPF</label>
                         <input id="cpf" type="text" name="cpf" placeholder="Digite seu CPF" required>
                     </div>
 
@@ -82,7 +82,7 @@
                 </div>
 
                 <div class="form-group">
-                    <label for="options">Selecione uma categoria</label>
+                    <label for="options">Selecione uma categoria do serviço que você precisa:</label>
                     <select id="categoria" name="options" required>
                         <option value="">Escolha uma opção</option>
                         <option value="1">Desenvolvidemento Front-End</option>
@@ -94,18 +94,23 @@
                 </div>
 
                 <div class="form-group">
-                    <label for="description">Descrição</label>
+                    <label for="description">Descreva o serviço que você necessita</label>
                     <textarea id="descricao" name="descricao" required></textarea>
                 </div>
 
                 <div class="form-group">
-                    <label for="description">informacoes Complementares</label>
-                    <textarea id="informacoesComplementares" name="informacoesComplementares" required></textarea>
+                    <label for="options">Frequência do serviço</label>
+                    <select id="categoria" name="options" required>
+                        <option value="">Escolha uma opção</option>
+                        <option value="1">Esporádico</option>
+                        <option value="3">Semanal</option>
+                        <option value="2">Mensal</option>
+                    </select>
                 </div>
 
                 <div class="form-group">
-                    <label for="attachment">Anexo</label>
-                    <input type="file" id="Anexo" name="Anexo">
+                    <label for="description">Informacoes Complementares</label>
+                    <textarea id="informacoesComplementares" name="informacoesComplementares" required></textarea>
                 </div>
 
                 <div class="continue-button">
