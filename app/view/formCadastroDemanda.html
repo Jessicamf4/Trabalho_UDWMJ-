@@ -37,7 +37,7 @@
         </nav>
         
         <div class="container px-4 px-lg-5 formulario">
-            <form action="#">
+            <form action="../model/CadastroRequisicao.php" method="post">
                 <div class="form-header">
                     <div class="title">
                         <h1>Cadastre sua demanda de serviço</h1>
@@ -55,7 +55,7 @@
                     </div>
 
                     <div class="input-box">
-                        <label for="lastname">CNPJ ou CPF</label>
+                        <label for="cpf">CNPJ ou CPF</label>
                         <input id="cpf" type="text" name="cpf" placeholder="Digite seu CPF" required>
                     </div>
 
@@ -65,12 +65,12 @@
                     </div>
 
                     <div class="input-box">
-                        <label for="number">Celular</label>
-                        <input id="celular" type="tel" name="celular" placeholder="(xx) xxxx-xxxx" required>
+                        <label for="telefone">Celular</label>
+                        <input id="telefone" type="tel" name="telefone" placeholder="(xx) xxxx-xxxx" required>
                     </div>
 
                     <div class="input-box">
-                        <label for="password">Senha</label>
+                        <label for="senha">Senha</label>
                         <input id="senha" type="password" name="senha" placeholder="Digite sua senha" required>
                     </div>
 
@@ -94,17 +94,17 @@
                 </div>
 
                 <div class="form-group">
-                    <label for="description">Descreva o serviço que você necessita</label>
+                    <label for="descricao">Descreva o serviço que você necessita</label>
                     <textarea id="descricao" name="descricao" required></textarea>
                 </div>
 
                 <div class="form-group">
-                    <label for="options">Frequência do serviço</label>
-                    <select id="categoria" name="options" required>
+                    <label for="frequencia">Frequência do serviço</label>
+                    <select id="frequencia" name="frequencia" required>
                         <option value="">Escolha uma opção</option>
-                        <option value="1">Esporádico</option>
-                        <option value="3">Semanal</option>
-                        <option value="2">Mensal</option>
+                        <option value="Esporádico">Esporádico</option>
+                        <option value="Semanal">Semanal</option>
+                        <option value="Mensal">Mensal</option>
                     </select>
                 </div>
 
