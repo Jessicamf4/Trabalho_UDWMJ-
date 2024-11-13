@@ -5,9 +5,9 @@ require_once 'config/db.php';
 $url = $_SERVER['REQUEST_URI'];
 $method = $_SERVER['REQUEST_METHOD'];
 
-if ($url == '/controller/empresas' && $method == 'GET') {
+if ($url == '/controller/prestadores' && $method == 'GET') {
     try {
-        $stmt = $pdo->prepare("SELECT * FROM Empresa");
+        $stmt = $pdo->prepare("SELECT * FROM SERVICO S, PRESTADOR P WHERE P.CPF = S.CPF;");
         $stmt->execute();
         $empresas = $stmt->fetchAll(PDO::FETCH_ASSOC);
         echo json_encode($empresas);
